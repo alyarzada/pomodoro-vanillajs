@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="pomodoro-app">
+      <header>
+        <div class="logo">
+          <h1>Pomodoro <span>by Alyarzada</span></h1>
+        </div>
+
+        <button class="nav-toggler">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </button>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article class="first-column">
+          <h1>Time Managment App</h1>
+          <h3 class="notification"></h3>
+          <section class="timer">
+            <h1 class="minute-text"></h1>
+            <h1 class="colon">:</h1>
+            <h1 class="second-text"></h1>
+          </section>
+
+          <section class="button-wrapper">
+            <button class="refresh-btn">refresh</button>
+            <button class="play-btn">play</button>
+            <button class="setting-btn">settings</button>
+          </section>
+        </article>
+
+        <article class="second-column">
+          <img src="./assets/37Z_2105.w007.n001.25C.p6.25.jpg" alt="image" />
+        </article>
+      </main>
+
+      <form class="pop-up-settings">
+        <div class="button-close">
+          <div class="cross-line-1"></div>
+          <div class="cross-line-2"></div>
+        </div>
+
+        <h3>Settings</h3>
+
+        <label>
+          <span>Work-time length:</span>
+          <input
+            type="number"
+            class="worktime-input"
+            max="60"
+            min="0"
+            placeholder="enter minute"
+          />
+        </label>
+
+        <label>
+          <span>Rest-time length:</span>
+          <input
+            type="number"
+            class="resttime-input"
+            max="60"
+            min="0"
+            placeholder="enter minute"
+          />
+        </label>
+
+        <label>
+          <span>Select alarm sound:</span>
+          <select name="music-wrapper" class="musics-wrapper">
+            <option value="music1">music 1</option>
+            <option value="music2">music 2</option>
+            <option value="music3">music 3</option>
+          </select>
+        </label>
+
+        <button type="submit" class="popup-close">Done</button>
+      </form>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
